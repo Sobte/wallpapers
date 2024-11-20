@@ -1,27 +1,7 @@
-# How to use Develop Config
+# Wallpapers
 
-### [use template repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
+![](./wide/119160144.png)
 
+## NASA
 
-### Directory structure
-```
-.
-│
-├── flake.nix
-│
-│   # Check if your nix file is formatted before uploading
-├── checks 
-│   └── pre-commit-check
-│       └── default.nix
-│
-│   # agenix command support
-├── shells
-│   └── default
-│       └── default.nix│
-│
-│   # direnv: https://github.com/direnv/direnv/wiki/Nix
-├── .envrc
-│
-│   # statix: https://github.com/oppiliappan/statix?tab=readme-ov-file#configuration
-└── statix.toml 
-```
+[https://apod.nasa.gov/apod/](https://apod.nasa.gov/apod/)
