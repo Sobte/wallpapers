@@ -1,11 +1,7 @@
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-
-    snowfall-lib = {
-      url = "github:snowfallorg/lib";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    purr.url = "github:nixcafe/purr";
 
     pre-commit-hooks = {
       url = "github:cachix/git-hooks.nix";
@@ -15,30 +11,14 @@
 
   outputs =
     inputs:
-    let
-      # TODO: write your own module loader with container support.
-      lib = inputs.snowfall-lib.mkLib {
-        # snowfall doc: https://snowfall.org/guides/lib/quickstart/
-        inherit inputs;
-        # root dir
-        src = ./.;
-
-        snowfall = {
-          namespace = "example";
-          meta = {
-            name = "example-flake";
-            title = "example' Nix Flakes";
-          };
+    inputs.purr.lib.mkFlake {
+      inherit inputs;
+      src = ./.;
+      namespace = "wallpaper";
+      outputsBuilder =
+        { pkgs, ... }:
+        {
+          formatter = pkgs.nixfmt;
         };
-      };
-    in
-    lib.mkFlake {
-
-      channels-config = {
-        allowUnfree = true;
-        permittedInsecurePackages = [ ];
-      };
-
-      outputs-builder = channels: { formatter = channels.nixpkgs.nixfmt; };
     };
 }
