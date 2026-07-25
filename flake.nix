@@ -3,7 +3,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     purr.url = "github:nixcafe/purr";
 
-    pre-commit-hooks = {
+    git-hooks = {
       url = "github:cachix/git-hooks.nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
@@ -15,10 +15,5 @@
       inherit inputs;
       src = ./.;
       namespace = "wallpaper";
-      outputsBuilder =
-        { pkgs, ... }:
-        {
-          formatter = pkgs.nixfmt;
-        };
     };
 }

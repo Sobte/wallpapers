@@ -18,11 +18,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1783776592,
-        "narHash": "sha256-UgCQzxeWI75XM8G+hPrPh+MKzEPjG3SpAj7dtqSbksA=",
+        "lastModified": 1784796856,
+        "narHash": "sha256-wWFrV5/Qbm+lyt5x20E/bSbfJiGKMo4RCxZV8cl/WZI=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "e7a3ca8092b61ff85b6a45bf863ea2b2d6a661b3",
+        "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
         "type": "github"
       },
       "original": {
@@ -34,11 +34,11 @@
     },
     "nixpkgs-lib": {
       "locked": {
-        "lastModified": 1783821755,
-        "narHash": "sha256-eMPX9S6MKPyUnaOgeRfrG7OKUiAlc1AlcRinMbSB0WA=",
+        "lastModified": 1784426460,
+        "narHash": "sha256-DFY3+18Zijt5odIlo/G2gn1cXbU9rVim01NG1zHbpxs=",
         "owner": "nix-community",
         "repo": "nixpkgs.lib",
-        "rev": "228ab8523d81526e57a6ca342e1a919fb6d246a8",
+        "rev": "e978bdeeff2de8eb5454396f6557e655845b32c7",
         "type": "github"
       },
       "original": {
@@ -47,7 +47,7 @@
         "type": "github"
       }
     },
-    "pre-commit-hooks": {
+    "git-hooks": {
       "inputs": {
         "flake-compat": "flake-compat",
         "nixpkgs": [
@@ -55,11 +55,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1783008725,
-        "narHash": "sha256-jGiy6+sxjNWXSjp25uoJuNfyH9zBK1PEDY0lVoL4ibQ=",
+        "lastModified": 1784288435,
+        "narHash": "sha256-ReRHaLgr/uVqdD8afFSn+myXIfpHeOhP0yYe0TJqAA8=",
         "owner": "cachix",
         "repo": "git-hooks.nix",
-        "rev": "bca82caa46d5ec0f5d422c61fb1e30bc51313cbe",
+        "rev": "43b3c1ab9d40fb1dbb008f451988a91e375825e9",
         "type": "github"
       },
       "original": {
@@ -73,11 +73,11 @@
         "nixpkgs-lib": "nixpkgs-lib"
       },
       "locked": {
-        "lastModified": 1784022610,
-        "narHash": "sha256-dLuByRMiYY6SoJSIPuxA2XnIF/bw+K7j5XWUfQcFNbU=",
+        "lastModified": 1784981592,
+        "narHash": "sha256-dM8bbIr3/Fgia/XZ6k4FE7O1juw8LaA42B8poXQ9ixw=",
         "owner": "nixcafe",
         "repo": "purr",
-        "rev": "56bb3080a1d48b17dcca3baf22a9278e213071ff",
+        "rev": "c59b9427feac82d094af493d10ee6e5daa0f1628",
         "type": "github"
       },
       "original": {
@@ -89,7 +89,7 @@
     "root": {
       "inputs": {
         "nixpkgs": "nixpkgs",
-        "pre-commit-hooks": "pre-commit-hooks",
+        "git-hooks": "git-hooks",
         "purr": "purr"
       }
     }
